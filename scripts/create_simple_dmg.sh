@@ -10,7 +10,7 @@ cd "$SCRIPT_DIR/.."
 
 # Configuration
 APP_NAME="Prezefren"
-APP_VERSION="1.0.8"
+APP_VERSION="1.0.15"
 SOURCE_APP="build/${APP_NAME}.app"
 FINAL_DMG="build/${APP_NAME}-${APP_VERSION}.dmg"
 
