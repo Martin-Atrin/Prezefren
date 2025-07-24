@@ -1,0 +1,91 @@
+# Prezefren Git Ignore - Resource Critical Project
+
+# === CRITICAL: REFERENCE PROJECTS (NEVER COMMIT) ===
+# These are multi-GB reference folders
+SubmAIvoice/
+Sub4Seas_beta1/
+
+# === WHISPER MODELS & LARGE BINARIES ===
+*.bin
+*.ggml
+*.model
+*.weights
+*.pt
+*.safetensors
+
+# === VENDOR DEPENDENCIES ===
+Prezefren_app/Vendor/whisper.cpp/
+Prezefren_app/Vendor/*/
+
+# === BUILD OUTPUTS ===
+build/
+*.dylib
+*.a
+*.so
+*.dll
+*.exe
+
+# === XCODE & SWIFT ===
+.build/
+DerivedData/
+*.xcodeproj/project.xcworkspace/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+*.swiftpm/
+.swiftpm/xcode/
+
+# === MACOS SYSTEM ===
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# === TEMPORARY FILES ===
+*.tmp
+*.temp
+*.log
+*.cache
+temp_clean/
+
+# === IDE & EDITORS ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# === CREDENTIALS & KEYS ===
+*.key
+*.pem
+*.p12
+api_keys.txt
+secrets.txt
+.env
+.env.local
+.env.production
+
+# === DEVELOPMENT SPECIFIC FILES (PUBLIC LAUNCH EXCLUSIONS) ===
+CLAUDE.md
+RECOVERY_DUMP.md
+*_Debug.log
+Screenshot*.png
+prezefren-theme-extension.swift
+
+# === TESTING & DEBUG ===
+test_db.*
+debug_test
+*.dSYM/
+
+# === PACKAGE MANAGERS ===
+Pods/
+node_modules/
+.packages
+Package.resolved
+
+# Only commit essential Swift source files and documentation
+# Keep repo lean and fast for resource-critical developmentdist/
+dist/
+Vendor/whisper.cpp/

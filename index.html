@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prezefren - Real-Time Voice Transcription & Translation</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Prezefren - Professional real-time voice transcription and translation for macOS. Transform your voice into instant floating subtitles with AI-powered accuracy.">
+    <meta name="keywords" content="voice transcription, real-time translation, macOS app, subtitles, AI, whisper, multilingual">
+    <meta name="author" content="Prezefren Team">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Prezefren - Real-Time Voice Transcription & Translation">
+    <meta property="og:description" content="Professional real-time voice transcription and translation for macOS">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://martin-atrin.github.io/Prezefren/">
+    <meta property="og:image" content="https://martin-atrin.github.io/Prezefren/assets/images/prezefren-preview.png">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Prezefren - Real-Time Voice Transcription & Translation">
+    <meta name="twitter:description" content="Professional real-time voice transcription and translation for macOS">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-container">
+            <div class="loading-logo">
+                <h1>Prezefren</h1>
+                <div class="loading-subtitle">🎤➡️🌍</div>
+            </div>
+            <div class="loading-animation">
+                <div class="circle circle1"></div>
+                <div class="circle circle2"></div>
+                <div class="circle circle3"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Prezefren</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#download" class="nav-link">Download</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-main">Prezefren</span>
+                    <span class="title-subtitle">Real-Time Voice Transcription & Translation</span>
+                </h1>
+                <p class="hero-description">
+                    Free & Open Source macOS app with multiple floating subtitle windows, multi-engine transcription (Whisper/Apple/AssemblyAI), and advanced dual-channel processing. Works completely offline or with cloud services. Built for Apple Silicon.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#download" class="btn btn-primary">
+                        <i class="fas fa-download"></i>
+                        Download Now
+                    </a>
+                    <a href="#features" class="btn btn-secondary">
+                        <i class="fas fa-play"></i>
+                        Watch Demo
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">90-95%</span>
+                        <span class="stat-label">Accuracy</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">&lt;500ms</span>
+                        <span class="stat-label">Latency</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">99+</span>
+                        <span class="stat-label">Languages</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="app-preview">
+                    <img src="assets/images/app-preview.png" alt="Prezefren App Preview" class="preview-image">
+                    <div class="floating-subtitle-demo">
+                        <div class="subtitle-window">
+                            <span>Hello, how are you today?</span>
+                        </div>
+                        <div class="subtitle-window translated">
+                            <span>Hola, ¿cómo estás hoy?</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Powerful Features</h2>
+                <p>Everything you need for professional voice transcription and translation</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <h3>Multi-Engine Transcription</h3>
+                    <p>Choose from Whisper.cpp (local), Apple Speech Recognition (on-device), or AssemblyAI (cloud streaming) with sub-500ms latency.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-window-restore"></i>
+                    </div>
+                    <h3>Multiple Floating Windows</h3>
+                    <p>Create multiple floating subtitle windows with customizable fonts (up to 72pt), templates, and word-by-word animations.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Intelligent Translation</h3>
+                    <p>Dynamic language support: 99 languages with Whisper, 30+ with Apple Translation (macOS 15+), plus Google Gemini fallback.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headphones"></i>
+                    </div>
+                    <h3>Advanced Audio Modes</h3>
+                    <p>Mono, Goobero (dual-channel with VAD), and Single Earbud modes. Independent L/R channel transcription with anti-hallucination technology.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-audio"></i>
+                    </div>
+                    <h3>Record-to-File</h3>
+                    <p>High-quality audio recording with native sample rate support (44.1kHz/48kHz). Save transcription sessions with perfect audio fidelity.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>Offline & Online Ready</h3>
+                    <p>Works 100% offline with Whisper.cpp and Apple Speech, or enhance with cloud services (AssemblyAI/Gemini). Your choice, your privacy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offline/Online Section -->
+    <section id="connectivity" class="connectivity">
+        <div class="container">
+            <div class="section-header">
+                <h2>Works Everywhere - Online or Offline</h2>
+                <p>Ultimate flexibility for any environment or privacy requirement</p>
+            </div>
+            <div class="connectivity-grid">
+                <div class="connectivity-card offline">
+                    <div class="connectivity-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>100% Offline Mode</h3>
+                    <div class="connectivity-features">
+                        <div class="feature-item">
+                            <i class="fas fa-microchip"></i>
+                            <span><strong>Whisper.cpp:</strong> Local AI transcription with 99 languages</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-apple-alt"></i>
+                            <span><strong>Apple Speech:</strong> On-device recognition (macOS 15+)</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span><strong>Privacy First:</strong> Zero data leaves your Mac</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-plane"></i>
+                            <span><strong>Travel Ready:</strong> Perfect for flights, remote locations</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="connectivity-card online">
+                    <div class="connectivity-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Enhanced Online Mode</h3>
+                    <div class="connectivity-features">
+                        <div class="feature-item">
+                            <i class="fas fa-rocket"></i>
+                            <span><strong>AssemblyAI:</strong> Sub-500ms cloud transcription</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-globe"></i>
+                            <span><strong>Google Gemini:</strong> Advanced translation quality</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-language"></i>
+                            <span><strong>More Languages:</strong> Extended translation support</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-sync-alt"></i>
+                            <span><strong>Real-time Updates:</strong> Latest AI improvements</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="connectivity-note">
+                <p><strong>Your Choice:</strong> Start offline, add cloud features when needed. No internet dependency means Prezefren always works when you need it most. <strong>Always free and open source</strong> - no hidden costs or subscriptions ever.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="section-header">
+                        <h2>About Prezefren</h2>
+                        <p>Breaking language barriers, one conversation at a time</p>
+                    </div>
+                    <div class="about-description">
+                        <p>Prezefren is a free and open source macOS application optimized for Apple Silicon, providing professional-grade real-time voice transcription that works completely offline or with cloud enhancement. No cost, no subscriptions, no restrictions - if you have a Mac, you can use Prezefren.</p>
+                        
+                        <p>Perfect for secure environments, travel, or anywhere internet is unreliable. Start with full offline functionality, then add cloud services when available for enhanced features. Your workflow adapts to your environment, and it's yours forever.</p>
+                        
+                        <div class="tech-stack">
+                            <h3>Built With</h3>
+                            <div class="tech-items">
+                                <span class="tech-item">Swift + SwiftUI</span>
+                                <span class="tech-item">Whisper.cpp</span>
+                                <span class="tech-item">Apple Speech</span>
+                                <span class="tech-item">AssemblyAI</span>
+                                <span class="tech-item">Core Audio</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="architecture-diagram">
+                        <div class="diagram-layer">
+                            <span>User Interface</span>
+                            <small>SwiftUI + NSPanel</small>
+                        </div>
+                        <div class="diagram-layer">
+                            <span>Audio Processing</span>
+                            <small>Core Audio + Whisper</small>
+                        </div>
+                        <div class="diagram-layer">
+                            <span>Translation Services</span>
+                            <small>Gemini API + Local NLLB</small>
+                        </div>
+                        <div class="diagram-layer">
+                            <span>macOS Integration</span>
+                            <small>Native Performance</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section id="use-cases" class="use-cases">
+        <div class="container">
+            <div class="section-header">
+                <h2>Perfect For</h2>
+                <p>Designed for professionals, creators, educators, and accessibility advocates</p>
+            </div>
+            <div class="use-cases-grid">
+                <div class="use-case-card">
+                    <div class="use-case-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Business & Professional</h3>
+                    <ul>
+                        <li>International meetings with real-time translation</li>
+                        <li>Presentation subtitles for global audiences</li>
+                        <li>Conference calls with automatic transcription</li>
+                        <li>Client meetings with language barriers</li>
+                    </ul>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Content Creation</h3>
+                    <ul>
+                        <li>Live streaming with multilingual subtitles</li>
+                        <li>Video recording with automated captions</li>
+                        <li>Podcast production with real-time transcripts</li>
+                        <li>Educational content in multiple languages</li>
+                    </ul>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Education & Learning</h3>
+                    <ul>
+                        <li>Language learning with instant translation</li>
+                        <li>International classrooms with live subtitles</li>
+                        <li>Study sessions with transcription notes</li>
+                        <li>Academic conferences with multilingual support</li>
+                    </ul>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-icon">
+                        <i class="fas fa-universal-access"></i>
+                    </div>
+                    <h3>Accessibility</h3>
+                    <ul>
+                        <li>Hearing assistance with visual subtitles</li>
+                        <li>Communication support for diverse needs</li>
+                        <li>Text-based interaction for speech difficulties</li>
+                        <li>Large text display for visual accessibility</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <div class="section-header">
+                <h2>Download Prezefren - 100% Free</h2>
+                <p>Free & Open Source software. No subscriptions, no limitations, no restrictions. Just download and use!</p>
+            </div>
+            <div class="download-content">
+                <div class="download-info">
+                    <div class="current-version">
+                        <span class="version-badge">v1.0.15</span>
+                        <h3>Latest Release - Forever Free</h3>
+                        <p>Professional voice transcription with record-to-file feature, multiple transcription engines, and advanced dual-channel processing. Completely free with full source code available.</p>
+                    </div>
+                    <div class="system-requirements">
+                        <h4>System Requirements</h4>
+                        <ul>
+                            <li><strong>macOS:</strong> 12.0 (Monterey) or later</li>
+                            <li><strong>Processor:</strong> Apple Silicon (M1/M2/M3) Required</li>
+                            <li><strong>Memory:</strong> 8 GB RAM minimum (16 GB recommended)</li>
+                            <li><strong>Storage:</strong> 1 GB available space</li>
+                            <li><strong>Audio:</strong> Built-in or external microphone</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="download-options">
+                    <div class="download-card primary">
+                        <div class="download-header">
+                            <i class="fas fa-compact-disc"></i>
+                            <h3>DMG Installer</h3>
+                            <span class="file-size">133 MB</span>
+                        </div>
+                        <p>Professional installer with automatic setup</p>
+                        <a href="https://github.com/Martin-Atrin/Prezefren/releases/latest" class="btn btn-primary">
+                            <i class="fas fa-download"></i>
+                            Download DMG
+                        </a>
+                    </div>
+                    <div class="download-card">
+                        <div class="download-header">
+                            <i class="fas fa-file-archive"></i>
+                            <h3>ZIP Archive</h3>
+                            <span class="file-size">136 MB</span>
+                        </div>
+                        <p>App bundle for manual installation</p>
+                        <a href="https://github.com/Martin-Atrin/Prezefren/releases/latest" class="btn btn-secondary">
+                            <i class="fas fa-download"></i>
+                            Download ZIP
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="installation-steps">
+                <h3>Quick Installation</h3>
+                <div class="steps">
+                    <div class="step">
+                        <span class="step-number">1</span>
+                        <p>Download and open the DMG file</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">2</span>
+                        <p>Drag Prezefren to Applications folder</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">3</span>
+                        <p>Launch and grant microphone permission</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">4</span>
+                        <p>Start speaking - transcription begins instantly!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Questions, feedback, or need support? We're here to help</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-links">
+                    <a href="https://github.com/Martin-Atrin/Prezefren" class="contact-link">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub Repository</span>
+                    </a>
+                    <a href="https://github.com/Martin-Atrin/Prezefren/issues" class="contact-link">
+                        <i class="fas fa-bug"></i>
+                        <span>Report Issues</span>
+                    </a>
+                    <a href="https://github.com/Martin-Atrin/Prezefren/discussions" class="contact-link">
+                        <i class="fas fa-comments"></i>
+                        <span>Community Discussions</span>
+                    </a>
+                    <a href="mailto:support@prezefren.com" class="contact-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email Support</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Prezefren</h3>
+                    <p>Breaking language barriers, one conversation at a time</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Product</h4>
+                        <a href="#features">Features</a>
+                        <a href="#download">Download</a>
+                        <a href="https://github.com/Martin-Atrin/Prezefren/releases">Releases</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Support</h4>
+                        <a href="https://github.com/Martin-Atrin/Prezefren/wiki">Documentation</a>
+                        <a href="https://github.com/Martin-Atrin/Prezefren/issues">Bug Reports</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Community</h4>
+                        <a href="https://github.com/Martin-Atrin/Prezefren">GitHub</a>
+                        <a href="https://github.com/Martin-Atrin/Prezefren/discussions">Discussions</a>
+                        <a href="https://github.com/Martin-Atrin/Prezefren/blob/main/CONTRIBUTING.md">Contributing</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Prezefren. Licensed under MIT License.</p>
+                <p>Made with ❤️ for the global community</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

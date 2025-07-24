@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>en</string>
+    <key>CFBundleExecutable</key>
+    <string>PrezefrenVirtualAudio</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.prezefren.virtualaudio</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleName</key>
+    <string>Prezefren Virtual Audio</string>
+    <key>CFBundlePackageType</key>
+    <string>BNDL</string>
+    <key>CFBundleShortVersionString</key>
+    <string>@MACOSX_BUNDLE_SHORT_VERSION_STRING@</string>
+    <key>CFBundleVersion</key>
+    <string>@MACOSX_BUNDLE_BUNDLE_VERSION@</string>
+    <key>CFPlugInDynamicRegistration</key>
+    <false/>
+    <key>CFPlugInFactories</key>
+    <dict>
+        <key>00000000-0000-0000-0000-000000000001</key>
+        <string>PrezefrenDriverFactory</string>
+    </dict>
+    <key>CFPlugInTypes</key>
+    <dict>
+        <key>96364169-F0F1-11D4-BD8F-0050E4C10000</key>
+        <array>
+            <string>00000000-0000-0000-0000-000000000001</string>
+        </array>
+    </dict>
+    <key>CFPlugInUnloadFunction</key>
+    <string></string>
+</dict>
+</plist>
