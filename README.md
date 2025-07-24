@@ -1,5 +1,14 @@
 # Prezefren 🎤➡️🌍
 
+**Built from ❤️ for communities worldwide - by one dude with a laptop, bunch of coffee and Claude**
+
+Tldr; What started as an afternoon project transpired in a month long journey of **** -> finding out. Now I present to you Prezefren. While I have many more ideas and areas in which I want to push it further, I hope I'll find enough enthusiasts that can help me with propelling this further, to open up possibilities of today to communities worldwide. I mean, any presentation that can run in multiple languages offline is a great thing. Now what if we made it interactive? Save transcriptions and process them right there on the machine? Possibilities (and ideas :D) are there.
+
+Lots of love, keep passing on knowledge, Martin.
+--below you will find some summaries about the software that my trusty Claudpanion made, read up so you know how to do stuff!
+--but in general it's very intuitive - get the .dmg or .zip and fire away. Whisper is baked in already!
+
+
 **Free & Open Source Real-Time Voice Transcription & Translation for macOS**
 
 Transform your voice into instant, floating subtitles with professional AI-powered transcription and translation. Completely free with no restrictions - if you have a Mac, you can use Prezefren.
@@ -50,15 +59,15 @@ Prezefren is a **free and open source** native macOS application that provides *
 ## 📱 Screenshots
 
 ### Main Interface
-![Main Interface](docs/screenshots/main-interface.png)
+![Main Interface]
 *Modern card-based interface with Audio, Windows, and Translation tabs*
 
 ### Floating Subtitle Windows
-![Floating Windows](docs/screenshots/floating-windows.png)
+![Floating Windows]
 *Professional subtitle windows with customizable templates*
 
 ### Real-Time Translation
-![Translation](docs/screenshots/translation-demo.png)
+![Translation]
 *Live translation with multiple language support*
 
 ## 🎯 Perfect For
